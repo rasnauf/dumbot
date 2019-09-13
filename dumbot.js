@@ -35,8 +35,21 @@ bot.on('message', function (user, userID, channelID, message, evt) {
         bot.sendMessage({
           to: channelID,
           message: `
+debug: Print all parameters to callback function
 help: Print this message
 ping: Reply "Pong!"
+`
+        });
+        break;
+      case 'debug':
+        bot.sendMessage({
+          to: channelID,
+          message: `
+user: ${user}
+userID: ${userID}
+channelID: ${channelID}
+message: ${message}
+evt: ${evt}
 `
         });
         break;
