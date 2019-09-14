@@ -1,8 +1,9 @@
 # Don't leak bot token
 auth.json
 
-# TernJS Settings
+# Local Settings
 .tern-project
+.vscode/
 
 # Logs
 logs
